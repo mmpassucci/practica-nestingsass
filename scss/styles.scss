@@ -26,25 +26,27 @@
 
 .card {
     @include var.card;
-     &--highlighted {
-    background-color: var.$colorhigh;
-  }
+  
 
-    & h1 {
+    &__title {
         font-size: 20px;
         text-align: center;
         padding-top: 10px;
     }
 
-    & p {
+    &__content {
         font-size: 10px;
         text-align: center;
         padding: 10px 10px 20px 20px;
     }
-}
 
-.card a {
-    @include var.boton;
+    &__button {
+        @include var.boton;
     align-self: center;
+    }
+
+     &--highlighted {
+    background-color: var.$colorhigh;
 }
 
+}

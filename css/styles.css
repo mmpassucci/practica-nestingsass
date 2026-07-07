@@ -38,21 +38,17 @@
   margin: 20px 0px 0px 20px;
   box-shadow: 2px 2px 2px #635f5f;
 }
-.card--highlighted {
-  background-color: #8475E6;
-}
-.card h1 {
+.card__title {
   font-size: 20px;
   text-align: center;
   padding-top: 10px;
 }
-.card p {
+.card__content {
   font-size: 10px;
   text-align: center;
   padding: 10px 10px 20px 20px;
 }
-
-.card a {
+.card__button {
   background-color: #5BC721;
   color: #0E3245;
   padding: 9px;
@@ -61,6 +57,9 @@
   margin: 20px;
   box-shadow: 2px 2px 2px #635f5f;
   align-self: center;
+}
+.card--highlighted {
+  background-color: #8475E6;
 }
 
 /*# sourceMappingURL=styles.css.map */

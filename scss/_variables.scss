@@ -1,0 +1,45 @@
+$colortitulos: #F8C428;
+$colorsubtitu: #0E3245;
+$colorparrafo: #165678;
+$colorfondo: #5BC721;
+$colorhigh: #8475E6;
+
+@mixin headerflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+@mixin estilosheader {
+    background-color: $colorfondo;
+    color: $colorsubtitu;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+@mixin card {
+    background-color: $colortitulos;
+    padding: 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: $colorsubtitu;
+    width: 300px;
+    height: 180px;
+    border-radius: 50px;
+    align-items: center;
+    margin: 20px 0px 0px 20px;
+    box-shadow: 2px 2px 2px #635f5f;
+  
+}
+
+@mixin boton {
+    background-color: #5BC721;
+    color: #0E3245;
+    padding: 9px;
+    font-size: 13px;
+    border-radius: 8px;
+    margin: 20px;
+     box-shadow: 2px 2px 2px #635f5f;
+}

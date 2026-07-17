@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.headerbox {
+.header__headerbox {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -15,19 +15,24 @@
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
-.headerbox.logo {
-  font-size: 2rem;
+
+.headerbox__link {
+  font-size: 1.6rem;
+  text-decoration: none;
 }
-.headerbox a {
-  padding: 15px;
+
+.nav__link {
+  text-decoration: none;
+  padding: 18px;
 }
-.headerbox a:hover {
+
+.nav__link:hover {
   color: #F8C428;
 }
 
-.card {
+.card .card {
   background-color: #F8C428;
-  padding: 20px;
+  padding: 18px;
   text-align: center;
   font-family: "Poppins", sans-serif;
   color: #0E3245;
@@ -37,28 +42,28 @@
   align-items: center;
   margin: 20px 0px 0px 20px;
   box-shadow: 2px 2px 2px #635f5f;
+  font-size: 10px;
 }
-.card__title {
-  font-size: 20px;
+.card .card__title {
+  font-size: 18px;
   text-align: center;
   padding-top: 10px;
 }
-.card__content {
-  font-size: 10px;
+.card .card__content {
   text-align: center;
-  padding: 10px 10px 20px 20px;
+  padding: 8px 8px 18px 18px;
 }
-.card__button {
+.card .card__button {
   background-color: #5BC721;
   color: #0E3245;
-  padding: 9px;
-  font-size: 13px;
+  padding: 8px;
+  font-size: 12px;
   border-radius: 8px;
-  margin: 20px;
+  margin: 24px;
   box-shadow: 2px 2px 2px #635f5f;
   align-self: center;
 }
-.card--highlighted {
+.card .card--highlighted {
   background-color: #8475E6;
 }
 

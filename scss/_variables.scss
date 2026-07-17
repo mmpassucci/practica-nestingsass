@@ -1,45 +1,77 @@
-$colortitulos: #F8C428;
-$colorsubtitu: #0E3245;
-$colorparrafo: #165678;
-$colorfondo: #5BC721;
-$colorhigh: #8475E6;
+// _variables.scss
+
+//colores tipografías//
+$c-titulos: #F8C428;
+$c-subtitulos: #0E3245;
+$c-parrafo: #165678;
+
+//colores generales//
+$c-fondo: #5BC721;
+$c-highlighted: #8475E6;
+
+//Padding, margin//
+$space-1: 5px;
+$space-2: 8px;
+$space-3: 10px;
+$space-4: 12px;
+$space-5: 14px;
+$space-6: 18px;
+$space-7: 20px;
+$space-8:24px;
+
+//bordes//
+$b-redondo: 50px;
+$b-solido: 2px solid black;
+$b-sombreado: 2px 2px 2px #635f5f;
+
+//estilos tipografías//
+$f-titulo: 18px;
+$f-grande: 12px;
+$f-mediana: 10px;
+$f-chica: 8px;
+$f-colorclaro: #ffffff;
+$f-colorboton: #0E3245;
+$f-clase: "Poppins", sans-serif;
+
+//@mixin flexbox para header//
 
 @mixin headerflex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: $space-7;
 }
 
-@mixin estilosheader {
-    background-color: $colorfondo;
-    color: $colorsubtitu;
+@mixin estiloheader {
+    background-color: $c-fondo;
+    color: $c-subtitulos;
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
+    font-family: $f-clase;
 }
 
 @mixin card {
-    background-color: $colortitulos;
-    padding: 20px;
+    background-color: $c-titulos;
+    padding: $space-6;
     text-align: center;
-    font-family: "Poppins", sans-serif;
-    color: $colorsubtitu;
+    font-family: $f-clase;
+    color: $c-subtitulos;
     width: 300px;
     height: 180px;
-    border-radius: 50px;
+    border-radius: $b-redondo;
     align-items: center;
-    margin: 20px 0px 0px 20px;
-    box-shadow: 2px 2px 2px #635f5f;
+    margin: $space-7 0px 0px $space-7;
+    box-shadow: $b-sombreado;
+    font-size: $f-mediana;
   
 }
 
 @mixin boton {
-    background-color: #5BC721;
-    color: #0E3245;
-    padding: 9px;
-    font-size: 13px;
-    border-radius: 8px;
-    margin: 20px;
-     box-shadow: 2px 2px 2px #635f5f;
+    background-color: $c-fondo;
+    color: $f-colorboton;
+    padding: $space-2;
+    font-size: $f-grande;
+    border-radius: $space-2;
+    margin: $space-8;
+    box-shadow: $b-sombreado;
 }

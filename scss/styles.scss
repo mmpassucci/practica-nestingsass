@@ -6,38 +6,37 @@
     margin: 0;
     padding:0;
 }
-
-.headerbox {
+//--seccion header
+.header__headerbox {
     @include var.headerflex;
-    @include var.estilosheader;
-
-    &.logo {
-        font-size: 2rem;
-    }
-
-    & a {
-        padding: 15px;
-    }
-
-    & a:hover {
-        color: var.$colortitulos;
-    }
+    @include var.estiloheader;
 }
 
-.card {
+.headerbox__link {
+        font-size: 1.6rem;
+        text-decoration: none; }
+
+.nav__link {
+    text-decoration: none;
+    padding: var.$space-6;}
+
+.nav__link:hover {
+        color: var.$c-titulos;
+    }
+
+    //--seccion main
+.card .card {
     @include var.card;
-  
 
     &__title {
-        font-size: 20px;
+        font-size: var.$f-titulo;
         text-align: center;
-        padding-top: 10px;
+        padding-top: var.$space-3;
     }
 
     &__content {
-        font-size: 10px;
         text-align: center;
-        padding: 10px 10px 20px 20px;
+        padding: var.$space-2 var.$space-2 var.$space-6 var.$space-6;
     }
 
     &__button {
@@ -46,7 +45,8 @@
     }
 
      &--highlighted {
-    background-color: var.$colorhigh;
+    background-color: var.$c-highlighted;
+}
 }
 
-}
+
